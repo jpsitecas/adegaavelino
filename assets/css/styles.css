@@ -54,7 +54,8 @@ a {
 .nav a {
   text-decoration: none;
   color: var(--text);
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .nav a:hover {
@@ -62,12 +63,12 @@ a {
 }
 
 .hero {
-  min-height: 72vh;
+  min-height: 62vh;
   display: flex;
   align-items: center;
-  padding: 80px 8%;
+  padding: 70px 8%;
   background:
-    linear-gradient(rgba(23, 63, 47, 0.82), rgba(23, 63, 47, 0.82)),
+    linear-gradient(rgba(23, 63, 47, 0.86), rgba(23, 63, 47, 0.86)),
     url("../images/hero.jpg");
   background-size: cover;
   background-position: center;
@@ -99,7 +100,7 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.4rem, 6vw, 5rem);
+  font-size: clamp(2.6rem, 5vw, 4.6rem);
   margin-bottom: 20px;
 }
 
