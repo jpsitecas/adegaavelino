@@ -692,3 +692,32 @@ h3 {
   font-size: 1rem;
   margin-bottom: 10px;
 }
+
+.reviews-intro {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.reviews-grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  padding-top: 0;
+}
+
+.review-score-card {
+  border-top: 5px solid var(--wine);
+}
+
+.review-card p,
+.review-score-card p,
+.reviews-note p {
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.review-card strong {
+  color: var(--green);
+}
