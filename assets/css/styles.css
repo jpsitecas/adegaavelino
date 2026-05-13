@@ -228,13 +228,25 @@ h3 {
 }
 
 .page-hero {
-  padding: 88px 7%;
+  min-height: 48vh;
+  display: flex;
+  align-items: center;
+  padding: 70px 7%;
   background:
-    linear-gradient(rgba(23, 63, 47, 0.9), rgba(23, 63, 47, 0.9)),
+    linear-gradient(90deg, rgba(23, 63, 47, 0.92), rgba(23, 63, 47, 0.68), rgba(23, 63, 47, 0.2)),
     url("../images/foto_adega.jpeg");
   background-size: cover;
   background-position: center;
   color: white;
+}
+
+.page-hero-card {
+  max-width: 760px;
+  background: rgba(23, 63, 47, 0.72);
+  border: 1px solid rgba(240, 217, 170, 0.35);
+  border-radius: 28px;
+  padding: 38px;
+  box-shadow: var(--shadow);
 }
 
 .page-hero h1 {
@@ -323,8 +335,13 @@ h3 {
   }
 
   .page-hero {
-    padding: 64px 6%;
-  }
+  min-height: auto;
+  padding: 56px 6%;
+}
+
+.page-hero-card {
+  padding: 30px;
+}
 }
 
 .menu-intro {
