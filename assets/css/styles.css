@@ -211,3 +211,27 @@ h3 {
     min-height: 65vh;
   }
 }
+
+.page-hero {
+  padding: 80px 8%;
+  background: var(--green);
+  color: white;
+}
+
+.page-hero h1 {
+  margin-bottom: 18px;
+}
+
+.page-hero p {
+  max-width: 720px;
+  font-size: 1.15rem;
+}
+
+.content-page {
+  max-width: 900px;
+}
+
+.content-page p {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
