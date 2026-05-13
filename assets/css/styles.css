@@ -391,3 +391,94 @@ h3 {
     grid-column: span 1;
   }
 }
+
+.contact-intro {
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr;
+  gap: 36px;
+  align-items: stretch;
+}
+
+.contact-grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  padding-top: 0;
+}
+
+.contact-card,
+.hours-card,
+.takeaway-card {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.contact-card a,
+.hours-card a,
+.takeaway-card a {
+  color: var(--wine);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-card .btn,
+.takeaway-card .btn {
+  margin-top: 14px;
+}
+
+.contact-card .btn-primary,
+.takeaway-card .btn-primary {
+  color: white;
+}
+
+.contact-card .btn-secondary {
+  background: var(--cream);
+  color: var(--green);
+}
+
+.hours-section {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 22px;
+  padding-top: 0;
+}
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 12px 24px;
+  margin-top: 26px;
+}
+
+.hours-grid span {
+  color: var(--muted);
+}
+
+.hours-grid strong {
+  color: var(--green);
+}
+
+.takeaway-card {
+  border-top: 5px solid var(--wine);
+}
+
+.takeaway-card p,
+.contact-card p {
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+@media (max-width: 850px) {
+  .contact-intro,
+  .contact-grid-section,
+  .hours-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hours-grid {
+    grid-template-columns: 1fr;
+  }
+}
