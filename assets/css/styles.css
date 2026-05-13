@@ -721,3 +721,20 @@ h3 {
 .review-card strong {
   color: var(--green);
 }
+
+.reviews-note-section {
+  padding-top: 0;
+}
+
+.reviews-note {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .reviews-intro,
+  .reviews-grid-section {
+    grid-template-columns: 1fr;
+  }
+}
