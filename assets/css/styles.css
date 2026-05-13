@@ -79,7 +79,7 @@ a {
   padding: 80px 7%;
   background:
     linear-gradient(90deg, rgba(23, 63, 47, 0.92), rgba(23, 63, 47, 0.68), rgba(23, 63, 47, 0.2)),
-    url("../images/hero.jpg");
+    url("../images/foto_adega.jpeg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -231,7 +231,7 @@ h3 {
   padding: 88px 7%;
   background:
     linear-gradient(rgba(23, 63, 47, 0.9), rgba(23, 63, 47, 0.9)),
-    url("../images/hero.jpg");
+    url("../images/foto_adega.jpeg");
   background-size: cover;
   background-position: center;
   color: white;
