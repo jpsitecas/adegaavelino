@@ -1025,3 +1025,175 @@ h3 {
     padding: 62px 6%;
   }
 }
+
+/* Homepage clássica */
+
+.classic-hero {
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 7%;
+  text-align: center;
+  background:
+    linear-gradient(rgba(23, 63, 47, 0.74), rgba(23, 63, 47, 0.74)),
+    url("../images/foto_adega.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.classic-hero-content {
+  max-width: 860px;
+}
+
+.classic-hero h1 {
+  font-size: clamp(3.4rem, 8vw, 7rem);
+  margin-bottom: 20px;
+  color: white;
+}
+
+.classic-hero-subtitle {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  color: #f4eadb;
+}
+
+.classic-hero .hero-buttons {
+  justify-content: center;
+}
+
+.classic-welcome {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 44px;
+  align-items: start;
+}
+
+.classic-section-title h2 {
+  max-width: 620px;
+}
+
+.classic-text-box {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: var(--shadow);
+}
+
+.classic-text-box p {
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+.classic-text-box p:first-child {
+  margin-top: 0;
+}
+
+.classic-text-box p:last-child {
+  margin-bottom: 0;
+}
+
+.classic-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 520px;
+  background: var(--paper);
+}
+
+.classic-split-image {
+  background:
+    linear-gradient(rgba(23, 63, 47, 0.12), rgba(23, 63, 47, 0.12)),
+    url("../images/foto_adega.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.classic-split-content {
+  padding: 80px 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.classic-split-content p {
+  color: var(--muted);
+  font-size: 1.12rem;
+  max-width: 620px;
+}
+
+.classic-split-content .btn {
+  width: fit-content;
+  margin-top: 18px;
+}
+
+.classic-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.classic-info article {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.classic-info p {
+  color: var(--muted);
+}
+
+.classic-info a {
+  color: var(--wine);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.classic-final {
+  padding: 90px 7%;
+  text-align: center;
+  background: var(--green);
+  color: white;
+}
+
+.classic-final h2 {
+  color: white;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+}
+
+.classic-final .hero-buttons {
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+  .classic-hero {
+    min-height: auto;
+    padding: 72px 6%;
+  }
+
+  .classic-welcome,
+  .classic-split,
+  .classic-info {
+    grid-template-columns: 1fr;
+  }
+
+  .classic-split {
+    min-height: auto;
+  }
+
+  .classic-split-image {
+    min-height: 320px;
+  }
+
+  .classic-split-content {
+    padding: 56px 6%;
+  }
+
+  .classic-final {
+    padding: 68px 6%;
+  }
+}
