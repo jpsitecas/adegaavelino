@@ -16,16 +16,39 @@
 
 <body>
   <header class="site-header">
-    <a href="index.html" class="logo">Adega Avelino</a>
+  <a href="index.html" class="logo">Adega Avelino</a>
 
-    <nav class="nav">
+  <button class="menu-toggle" type="button" aria-label="Abrir menu">
+    <span>Menu</span>
+    <span class="menu-icon">☰</span>
+  </button>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <div class="menu-panel">
+    <div class="menu-panel-header">
+      <a href="index.html" class="logo">Adega Avelino</a>
+
+      <button class="menu-close" type="button" aria-label="Fechar menu">
+        ×
+      </button>
+    </div>
+
+    <nav class="overlay-nav">
       <a href="index.html">Início</a>
       <a href="sobre.html">Sobre Nós</a>
       <a href="menu.html">Menu</a>
       <a href="avaliacoes.html">Avaliações</a>
       <a href="contactos.html">Contactos</a>
+      <a href="contactos.html">Reservas</a>
     </nav>
-  </header>
+
+    <div class="menu-panel-footer">
+      <p>Rua Dr. Pereira Caldas, Nº 34<br>Vizela</p>
+      <a href="tel:+351934724859">+351 934 724 859</a>
+    </div>
+  </div>
+</div>
 
   <main>
     <section class="page-hero">
