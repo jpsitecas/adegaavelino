@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap");
+
 :root {
   --cream: #f4eadb;
   --paper: #fffaf2;
@@ -23,7 +25,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
   background: var(--cream);
   color: var(--text);
   line-height: 1.6;
@@ -214,9 +216,18 @@ body.menu-open {
 
 h1,
 h2,
+h3,
+.logo,
+.overlay-nav a {
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+}
+
+h1,
+h2,
 h3 {
-  line-height: 1.15;
+  line-height: 1.08;
   margin-top: 0;
+  font-weight: 700;
 }
 
 h1 {
@@ -1230,8 +1241,10 @@ h3 {
 .home-classic-hero h1 {
   margin: 0;
   color: white;
-  font-size: clamp(3.8rem, 9vw, 8rem);
-  letter-spacing: 1px;
+  font-size: clamp(3.2rem, 7vw, 6.8rem);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .home-meta {
@@ -1448,5 +1461,28 @@ h3 {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+p,
+a,
+button,
+span,
+strong {
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+}
+
+h1,
+h2,
+h3,
+.logo,
+.overlay-nav a {
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+}
+
+@media (max-width: 850px) {
+  .home-classic-hero h1 {
+    font-size: clamp(2.4rem, 10vw, 4.4rem);
+    white-space: normal;
   }
 }
