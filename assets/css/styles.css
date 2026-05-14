@@ -4,6 +4,7 @@
   --green: #173f2f;
   --green-soft: #2f5c47;
   --wine: #8f2f24;
+  --brick: #b65a3c;
   --gold: #c89b4f;
   --brown: #6b4f3a;
   --text: #2f2a24;
@@ -225,12 +226,12 @@ h1 {
 
 h2 {
   font-size: clamp(1.8rem, 4vw, 3rem);
-  color: var(--green);
+  color: var(--brick);
   margin-bottom: 18px;
 }
 
 h3 {
-  color: var(--green);
+  color: var(--brick);
   margin-bottom: 10px;
 }
 
@@ -1207,9 +1208,7 @@ h3 {
   justify-content: center;
   padding: 90px 7%;
   text-align: center;
-  background:
-    linear-gradient(rgba(16, 45, 34, 0.72), rgba(16, 45, 34, 0.72)),
-    url("../images/foto_adega.jpeg");
+  background: url("../images/header.jpeg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -1290,9 +1289,7 @@ h3 {
 
 .home-history-image {
   min-height: 520px;
-  background:
-    linear-gradient(rgba(16, 45, 34, 0.08), rgba(16, 45, 34, 0.08)),
-    url("../images/foto_adega.jpeg");
+  background: url("../images/historia.jpeg");
   background-size: cover;
   background-position: center;
 }
