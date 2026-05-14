@@ -842,3 +842,186 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Homepage refinada */
+
+.home-hero {
+  min-height: 78vh;
+}
+
+.home-opening {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 42px;
+  align-items: start;
+  background: var(--cream);
+}
+
+.home-opening-text h2 {
+  max-width: 620px;
+}
+
+.home-opening-copy {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 34px;
+  box-shadow: var(--shadow);
+}
+
+.home-opening-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
+.home-feature {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 28px;
+  align-items: stretch;
+  padding-top: 0;
+}
+
+.home-feature-card {
+  background: var(--green);
+  color: white;
+  border-radius: 28px;
+  padding: 42px;
+  box-shadow: var(--shadow);
+}
+
+.home-feature-card h2 {
+  color: white;
+}
+
+.home-feature-card p {
+  color: #efe5d4;
+  font-size: 1.08rem;
+}
+
+.home-specialties {
+  display: grid;
+  gap: 18px;
+}
+
+.home-specialties article {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.home-specialties span {
+  display: inline-block;
+  color: var(--gold);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.home-specialties p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.home-banner {
+  min-height: 46vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 7%;
+  background:
+    linear-gradient(90deg, rgba(23, 63, 47, 0.92), rgba(23, 63, 47, 0.62)),
+    url("../images/foto_adega.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.home-banner div {
+  max-width: 760px;
+}
+
+.home-banner h2 {
+  color: white;
+}
+
+.home-banner p {
+  max-width: 680px;
+  color: #f4eadb;
+  font-size: 1.12rem;
+}
+
+.home-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.home-info-card {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.home-info-card p {
+  color: var(--muted);
+}
+
+.home-info-card a {
+  color: var(--wine);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.home-final-cta {
+  padding: 86px 7%;
+  background: var(--green);
+  color: white;
+  text-align: center;
+}
+
+.home-final-cta div {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.home-final-cta h2 {
+  color: white;
+}
+
+.home-final-cta p {
+  color: #f4eadb;
+  font-size: 1.12rem;
+}
+
+.home-final-cta .hero-buttons {
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+  .home-hero {
+    min-height: auto;
+  }
+
+  .home-opening,
+  .home-feature,
+  .home-info {
+    grid-template-columns: 1fr;
+  }
+
+  .home-feature-card {
+    padding: 32px;
+  }
+
+  .home-banner {
+    min-height: auto;
+    padding: 62px 6%;
+  }
+
+  .home-final-cta {
+    padding: 62px 6%;
+  }
+}
