@@ -1740,3 +1740,133 @@ h3,
     padding: 64px 6%;
   }
 }
+
+/* Sobre Nós - versão alinhada com a homepage */
+
+.about-page-hero {
+  min-height: 62vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 7%;
+  text-align: center;
+  background: url("../images/header.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.about-page-hero-inner {
+  max-width: 900px;
+  animation: heroFadeUp 1.1s ease-out both;
+}
+
+.about-page-hero h1 {
+  margin: 0;
+  color: white;
+  font-size: clamp(3rem, 7vw, 6.6rem);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.75),
+    0 14px 35px rgba(0, 0, 0, 0.65),
+    0 0 2px rgba(0, 0, 0, 0.9);
+}
+
+.about-classic-intro {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  padding: 86px 7%;
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-classic-text {
+  max-width: 760px;
+}
+
+.about-classic-text p {
+  color: var(--muted);
+  font-size: 1.18rem;
+  line-height: 1.85;
+  margin-top: 0;
+}
+
+.about-classic-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-classic-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--paper);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-classic-image {
+  min-height: 560px;
+  background: url("../images/foto_adega2.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-classic-content {
+  padding: 86px 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-classic-content p {
+  color: var(--muted);
+  font-size: 1.12rem;
+  line-height: 1.85;
+  max-width: 680px;
+}
+
+.about-classic-final {
+  padding: 90px 7%;
+  background: var(--cream);
+  text-align: center;
+}
+
+.about-classic-final div {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-classic-final p {
+  color: var(--muted);
+  font-size: 1.16rem;
+  line-height: 1.85;
+}
+
+@media (max-width: 850px) {
+  .about-page-hero {
+    min-height: 56vh;
+    padding: 72px 6%;
+  }
+
+  .about-classic-intro,
+  .about-classic-split {
+    grid-template-columns: 1fr;
+  }
+
+  .about-classic-intro {
+    padding: 64px 6%;
+    gap: 26px;
+  }
+
+  .about-classic-image {
+    min-height: 340px;
+  }
+
+  .about-classic-content {
+    padding: 64px 6%;
+  }
+
+  .about-classic-final {
+    padding: 64px 6%;
+  }
+}
